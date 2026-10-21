@@ -1,0 +1,403 @@
+{
+  "production_head": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+  "baseline": "f70d5b0f21f076ef0a4c61a0707710f1ae3d28f2",
+  "platform": "native_sim/native/64",
+  "environment": {
+    "image": "ghcr.io/zephyrproject-rtos/ci:v0.29.2",
+    "gnu": "13.3",
+    "llvm": "20"
+  },
+  "fixtures_sha256": {
+    "src/main.c": "a5facfdb8aff9ebbb41125189a945da310704e81a423cb1249cd2eec98e12255",
+    "src/header.cpp": "af04322d2c8f0bc048e7d9b99070d13859bbc1a3481b3873bb5fc6d3d3a54790",
+    "prj.conf": "7d211c3d0173d2756f17223955f75c5b9f6911d4d300c4c16718e467425b498a",
+    "sanitize.conf": "9cffd297f137a791e1e8928ca51e255be24dcba5148de5f8359bcb9b1cef287d",
+    "CMakeLists.txt": "11ab516858abb0ebfe7cd9ab485d4a48a1d90f4be4a8322380d3ab6b05f943f5",
+    "app.overlay": "144913a35e2d7aa4a4f373e929c79f263183bdc7000c9e09f28462122c7d6f26",
+    "npm1304.overlay": "ab9cbae5d3182530b8e40522e5304bb4171bbbc0bf3f886f39b90981d4876d15"
+  },
+  "native64": [
+    {
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "implementation": "candidate",
+      "compiler": "gnu",
+      "sanitizers": false,
+      "source_sha256": {
+        "drivers/mfd/mfd_npm13xx.c": "3d76c003feac79f9c48602c96b334a7c457d7ff4814fa9086bd534072e5d40fd",
+        "include/zephyr/drivers/mfd/npm13xx.h": "176b23f7f73ca6753f3586e9036ed6dff50ff51140fb16e0e670b676fbfe1203"
+      },
+      "variants": [
+        {
+          "part": "1300",
+          "stages": [
+            {
+              "name": "configure",
+              "exit": 0,
+              "log": "1300-configure.log"
+            },
+            {
+              "name": "build",
+              "exit": 0,
+              "log": "1300-build.log"
+            },
+            {
+              "name": "run",
+              "exit": 0,
+              "log": "1300-run.log"
+            }
+          ],
+          "test_invocations": 17,
+          "exhaustive_repeats": 1
+        },
+        {
+          "part": "1304",
+          "stages": [
+            {
+              "name": "configure",
+              "exit": 0,
+              "log": "1304-configure.log"
+            },
+            {
+              "name": "build",
+              "exit": 0,
+              "log": "1304-build.log"
+            },
+            {
+              "name": "run",
+              "exit": 0,
+              "log": "1304-run.log"
+            }
+          ],
+          "test_invocations": 17,
+          "exhaustive_repeats": 1
+        }
+      ]
+    },
+    {
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "implementation": "candidate",
+      "compiler": "llvm",
+      "sanitizers": false,
+      "source_sha256": {
+        "drivers/mfd/mfd_npm13xx.c": "3d76c003feac79f9c48602c96b334a7c457d7ff4814fa9086bd534072e5d40fd",
+        "include/zephyr/drivers/mfd/npm13xx.h": "176b23f7f73ca6753f3586e9036ed6dff50ff51140fb16e0e670b676fbfe1203"
+      },
+      "variants": [
+        {
+          "part": "1300",
+          "stages": [
+            {
+              "name": "configure",
+              "exit": 0,
+              "log": "1300-configure.log"
+            },
+            {
+              "name": "build",
+              "exit": 0,
+              "log": "1300-build.log"
+            },
+            {
+              "name": "run",
+              "exit": 0,
+              "log": "1300-run.log"
+            }
+          ],
+          "test_invocations": 17,
+          "exhaustive_repeats": 1
+        },
+        {
+          "part": "1304",
+          "stages": [
+            {
+              "name": "configure",
+              "exit": 0,
+              "log": "1304-configure.log"
+            },
+            {
+              "name": "build",
+              "exit": 0,
+              "log": "1304-build.log"
+            },
+            {
+              "name": "run",
+              "exit": 0,
+              "log": "1304-run.log"
+            }
+          ],
+          "test_invocations": 17,
+          "exhaustive_repeats": 1
+        }
+      ]
+    },
+    {
+      "revision": "f70d5b0f21f076ef0a4c61a0707710f1ae3d28f2",
+      "implementation": "baseline",
+      "compiler": "gnu",
+      "sanitizers": false,
+      "source_sha256": {
+        "drivers/mfd/mfd_npm13xx.c": "55243ece602a0216a115ec9a5a34501f984bf390911395ff98f4d0530e42f00e",
+        "include/zephyr/drivers/mfd/npm13xx.h": "8c16225bbf1e2673d3d0ee60d2a91e33a930767aec685b9666c9d7775f0e8463"
+      },
+      "variants": [
+        {
+          "part": "1300",
+          "stages": [
+            {
+              "name": "configure",
+              "exit": 0,
+              "log": "1300-configure.log"
+            },
+            {
+              "name": "build",
+              "exit": 0,
+              "log": "1300-build.log"
+            },
+            {
+              "name": "run",
+              "exit": 0,
+              "log": "1300-run.log"
+            }
+          ],
+          "test_invocations": 17,
+          "exhaustive_repeats": 1
+        },
+        {
+          "part": "1304",
+          "stages": [
+            {
+              "name": "configure",
+              "exit": 0,
+              "log": "1304-configure.log"
+            },
+            {
+              "name": "build",
+              "exit": 0,
+              "log": "1304-build.log"
+            },
+            {
+              "name": "run",
+              "exit": 0,
+              "log": "1304-run.log"
+            }
+          ],
+          "test_invocations": 17,
+          "exhaustive_repeats": 1
+        }
+      ]
+    },
+    {
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "implementation": "candidate",
+      "compiler": "gnu",
+      "sanitizers": true,
+      "source_sha256": {
+        "drivers/mfd/mfd_npm13xx.c": "3d76c003feac79f9c48602c96b334a7c457d7ff4814fa9086bd534072e5d40fd",
+        "include/zephyr/drivers/mfd/npm13xx.h": "176b23f7f73ca6753f3586e9036ed6dff50ff51140fb16e0e670b676fbfe1203"
+      },
+      "variants": [
+        {
+          "part": "1300",
+          "stages": [
+            {
+              "name": "configure",
+              "exit": 0,
+              "log": "1300-configure.log"
+            },
+            {
+              "name": "build",
+              "exit": 0,
+              "log": "1300-build.log"
+            },
+            {
+              "name": "run",
+              "exit": 0,
+              "log": "1300-run.log"
+            }
+          ],
+          "test_invocations": 170,
+          "exhaustive_repeats": 10
+        },
+        {
+          "part": "1304",
+          "stages": [
+            {
+              "name": "configure",
+              "exit": 0,
+              "log": "1304-configure.log"
+            },
+            {
+              "name": "build",
+              "exit": 0,
+              "log": "1304-build.log"
+            },
+            {
+              "name": "run",
+              "exit": 0,
+              "log": "1304-run.log"
+            }
+          ],
+          "test_invocations": 170,
+          "exhaustive_repeats": 10
+        }
+      ]
+    }
+  ],
+  "hardware_run": false,
+  "ci_callback_tests": false,
+  "native32": [
+    {
+      "compiler": "gnu",
+      "platform": "native_sim/native",
+      "test_invocations": 34,
+      "status": "passed",
+      "retries": 0
+    },
+    {
+      "compiler": "llvm",
+      "platform": "native_sim/native",
+      "test_invocations": 34,
+      "status": "passed",
+      "retries": 0
+    }
+  ],
+  "negative_controls": [
+    {
+      "mutation": "unsafe-walk",
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "part": "1300",
+      "expected_failed_test": "test_self_removal_preserves_other_subscriber",
+      "stages": [
+        {
+          "name": "configure",
+          "exit": 0,
+          "log": "unsafe-walk-configure.log"
+        },
+        {
+          "name": "build",
+          "exit": 0,
+          "log": "unsafe-walk-build.log"
+        },
+        {
+          "name": "run",
+          "exit": 1,
+          "log": "unsafe-walk-run.log"
+        }
+      ]
+    },
+    {
+      "mutation": "clear-first",
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "part": "1300",
+      "expected_failed_test": "test_all_event_bit_mappings",
+      "stages": [
+        {
+          "name": "configure",
+          "exit": 0,
+          "log": "clear-first-configure.log"
+        },
+        {
+          "name": "build",
+          "exit": 0,
+          "log": "clear-first-build.log"
+        },
+        {
+          "name": "run",
+          "exit": 1,
+          "log": "clear-first-run.log"
+        }
+      ]
+    },
+    {
+      "mutation": "reject-reregistration",
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "part": "1300",
+      "expected_failed_test": "test_repeated_add_moves_callback_without_duplication",
+      "stages": [
+        {
+          "name": "configure",
+          "exit": 0,
+          "log": "reject-reregistration-configure.log"
+        },
+        {
+          "name": "build",
+          "exit": 0,
+          "log": "reject-reregistration-build.log"
+        },
+        {
+          "name": "run",
+          "exit": 1,
+          "log": "reject-reregistration-run.log"
+        }
+      ]
+    },
+    {
+      "mutation": "reject-undefined-mask",
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "part": "1300",
+      "expected_failed_test": "test_undefined_mask_bits_are_accepted_and_not_reported",
+      "stages": [
+        {
+          "name": "configure",
+          "exit": 0,
+          "log": "reject-undefined-mask-configure.log"
+        },
+        {
+          "name": "build",
+          "exit": 0,
+          "log": "reject-undefined-mask-build.log"
+        },
+        {
+          "name": "run",
+          "exit": 1,
+          "log": "reject-undefined-mask-run.log"
+        }
+      ]
+    },
+    {
+      "mutation": "link-before-write",
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "part": "1300",
+      "expected_failed_test": "test_failed_registration_does_not_link_callback",
+      "stages": [
+        {
+          "name": "configure",
+          "exit": 0,
+          "log": "link-before-write-configure.log"
+        },
+        {
+          "name": "build",
+          "exit": 0,
+          "log": "link-before-write-build.log"
+        },
+        {
+          "name": "run",
+          "exit": 1,
+          "log": "link-before-write-run.log"
+        }
+      ]
+    },
+    {
+      "mutation": "ignore-registration-error",
+      "revision": "81eaec43183f86d803b4fae51ecb84afc3f3f26b",
+      "part": "1300",
+      "expected_failed_test": "test_failed_registration_does_not_link_callback",
+      "stages": [
+        {
+          "name": "configure",
+          "exit": 0,
+          "log": "ignore-registration-error-configure.log"
+        },
+        {
+          "name": "build",
+          "exit": 0,
+          "log": "ignore-registration-error-build.log"
+        },
+        {
+          "name": "run",
+          "exit": 1,
+          "log": "ignore-registration-error-run.log"
+        }
+      ]
+    }
+  ]
+}
