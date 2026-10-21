@@ -14,8 +14,9 @@ and I2C/GPIO emulators. They check per-event delivery before clear, filtering,
 self-removal, re-registration, all fourteen mappings, read retry, empty and
 undefined masks, and a C++11 caller. Clear failures cover all fourteen event
 positions, both before and after the emulated write takes effect. Registration
-failures cover all twenty-eight clear/enable writes. The latter checks that a
-failed add does not link the callback; it does not promise hardware rollback.
+failures cover all twenty-eight clear/enable writes for a new callback. They
+check that an error does not link it; they do not specify failed re-registration
+behavior or promise hardware rollback.
 
 One test traverses all 16,383 nonempty firing masks with three fixed
 subscriptions: ``0x3fff``, ``0x1555`` and ``0x2aaa``. Each traversal expects
